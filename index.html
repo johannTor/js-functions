@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Contact List</h1>
+    </header>
+    <main>
+        <div class="contact-list-container">
+            <h1>Contacts</h1>
+            <ul class="the-list">
+            </ul>
+            <button onclick="showAddContactBox()">+</button>
+        </div>
+        <div class="new-contact">
+            <h1>Add a new contact</h1>
+            <form>
+                <label id="name-label" for="name">Please provide a name</label>
+                <input type="text" name="name" id="new-name" placeholder="Name*" required>
+                <label id="email-label" for="email">Please provide an email</label>
+                <label id="used-email-label" for="email">Email already in use</label>
+                <input type="text" name="email" id="new-email" placeholder="Email*" required>
+                <input type="text" id="new-phone" placeholder="Phone">
+                <input type="text" id="new-company" placeholder="Company">
+                <input type="button" id="add-button" onclick="processNewContact()" value="Add Contact">
+            </form>
+        </div>
+        <div class="contact-info">
+        </div>
+        <div class="contact-edit">
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
